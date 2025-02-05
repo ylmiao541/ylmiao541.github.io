@@ -4,13 +4,23 @@
     "label": "Robotics Researcher and Engineer",
     "image": "",
     "email": "yinglongmiao3@gmail.com",
-    "url": "https://ylmiao541.github.io",
-    "summary": "Experienced robotics researcher and developer with 7+ years of experience in robotic manipulation, task and motion planning, motion planning and deep learning. Proven track record in designing, deploying, and optimizing vision-based robotic manipulation algorithms, ML-driven motion planning algorithms, and deep learning applications (RL, variational autoencoder, etc.). Skilled in Python, C++, ROS, MoveIt, Mujoco, and Pytorch, with a passion for solving real-world challenges and driving innovation.",
+    "phone": "(912) 123-4567",
+    "url": "https://alshedivat.github.io/al-folio/",
+    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
     "location": {
-      "city": "Piscataway",
+      "address": "2712 Broadway St",
+      "postalCode": "CA 94115",
+      "city": "San Francisco",
       "countryCode": "US",
-      "region": "New Jersey"
-    }
+      "region": "California"
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "AlbertEinstein",
+        "url": "https://twitter.com/AlbertEinstein"
+      }
+    ]
   },
   "work": [
     {

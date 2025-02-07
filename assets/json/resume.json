@@ -78,21 +78,45 @@
         "studyType": "B.Sc. in Computer Science with Honours, First Class",
         "startDate": "2013-09",
         "endDate": "2018-07",
-        "courses": ["TBD"]
+        "courses": ["Topics in Graph Algorithms (A)", "Foundations of Optimization (A)", "Matrix Analysis and Computations (A)", "Web-scale Information Analytics (A)"]
     } 
   ],
   "awards": [
     {
-      "title": "Talent Development Scholarship"
+      "title": "NSF NRT SOCRATES program",
+      "date": "2024-01-01",
+      "awarder": "Socially Cognizant Robotics for a Technology Enhanced Society",
+      "url": "https://grad.rutgers.edu/academics/programs/socially-cognizant-robotics",
+      "summary": "An NRT traineeship that focuses on integrating robotics, machine learning, and artificial intelligence with social and behavioral sciences, including psychology, cognitive science, urban planning, and policy development."
     },
     {
-      "title": "Department Admission Scholarship"
+      "title": "Outstanding Manipulation Paper Award-Finalist at ICRA 2022",
+      "date": "2022-05-26",
+      "awarder": "IEEE Robotics and Automation Society",
+      "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9811630",
+      "summary": "For the paper co-authored with Shiyang Lu, Rui Wang, Chaitanya Mitash and Kostas E. Bekris, \"Online Object Model Reconstruction and Reuse for Lifelong Improvement of Robot Manipulation\""   
+  },
+  
+    {
+      "title": "ELITE Stream & Intelligent Science Stream",
+      "date": "2018-11-01",
+      "awarder": "Faculty of Engineering, CUHK",
+      "url": "https://www.erg.cuhk.edu.hk/erg/Elite",
+      "summary": "The ELITE Stream is offered by the Faculty to students with excellent academic performance. Its aims are to nurture outstanding engineering students and to develop their potentials through additional challenging coursework and invaluable extra-curricular activities. Any student who meets the entrance requirements is eligible for the Stream. The award of the ELITE Stream to qualified students will be officially recorded on the academic transcript."
     },
     {
-      "title": "Dean’s List"
+      "title": "Dean’s List (2013-15, 2016-18)"
     },
     {
-      "title": "ELITE Stream & Intelligent Science Stream"
+      "title": "Talent Development Scholarship",
+      "url": "https://admission.cuhk.edu.hk/fees-financing-your-studies/scholarships/talent-development-sch/",
+      "summary": "To give recognition to students with achievements or talents in non-academic areas and provide support for these students to further develop their talent and potential. Have demonstrated talent or potential in at least one of the following areas: (1) Sports and games; (2) Music and performing arts; (3) Culture, arts and design; or (4) Innovation, science and technology; Good academic attainment."
+    },
+    {
+      "title": "Department Admission Scholarship 2013-14",
+      "date": "2015-11-09",
+      "awarder": "Department of Computer Science and Engineer, CUHK",
+      "url": "https://admission.cuhk.edu.hk/fees-financing-your-studies/scholarships/admission-scholarships-for-undergraduates-only/"
     }
 ],
   "publications": [

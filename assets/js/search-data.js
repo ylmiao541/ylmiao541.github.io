@@ -84,6 +84,11 @@ ninja.data = [{
           description: "course project for CSE535 at Rutgers.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/rutgers-cse535/";
+            },},{id: "projects-learning-based-collision-detector",
+          title: 'learning-based collision detector',
+          description: "course project for CS291 (ML on Geometrical Data) at UCSD.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/ucsd-collision/";
             },},{
         id: 'social-email',
         title: 'email',

@@ -32,17 +32,10 @@ ninja.data = [{
           },
         },{id: "nav-teaching",
           title: "teaching",
-          description: "Materials for courses you taught. Replace this text with your description.",
+          description: "Teaching assistant at UCSD and Rutgers University.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/teaching/";
-          },
-        },{id: "nav-people",
-          title: "people",
-          description: "members of the lab or group",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/people/";
           },
         },{id: "dropdown-publications",
               title: "publications",
@@ -58,96 +51,73 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "";
               },
-            },{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+            },{id: "news-graduated-with-b-sc-in-computer-science-from-the-chinese-university-of-hong-kong-joining-for-m-sc-in-computer-science-in-ucsd",
+          title: 'Graduated with B.Sc. in Computer Science from the Chinese University of Hong Kong....',
           description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
+          section: "News",},{id: "news-joining-arclab-at-ucsd",
+          title: 'Joining ARCLab at UCSD.',
           description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          section: "News",},{id: "news-graduated-with-m-sc-in-computer-science-from-ucsd-joining-pracsys-lab-advised-by-dr-kostas-bekris-for-phd-in-computer-science-at-rutgers",
+          title: 'Graduated with M.Sc. in Computer Science from UCSD. Joining PRACSYS Lab advised by...',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
+          section: "News",},{id: "news-joining-for-an-advanced-robotics-internship-at-siemens",
+          title: 'Joining for an Advanced Robotics Internship at Siemens.',
+          description: "",
+          section: "News",},{id: "news-finished-advanced-robotics-internship-at-siemens-our-work-is-featured-at-the-arm-institute",
+          title: 'Finished Advanced Robotics Internship at Siemens. Our work is featured at the ARM...',
+          description: "",
+          section: "News",},{id: "news-finishing-with-m-sc-in-computer-science-at-rutgers-in-april-or-may-2025-looking-for-jobs",
+          title: 'Finishing with M.Sc. in Computer Science at Rutgers in April or May 2025....',
+          description: "",
+          section: "News",},{id: "projects-control-barrier-function-for-ik",
+          title: 'control barrier function for IK',
+          description: "Investigate and reproduce paper results for IK with collision avoidance using control barrier function.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
+              window.location.href = "/projects/CBF-ik/";
+            },},{id: "projects-ocrtoc-challenge-2020",
+          title: 'OCRTOC challenge 2020',
+          description: "Participated in IROS 2020 OCRTOC challenge.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
+              window.location.href = "/projects/ocrtoc-challenge/";
+            },},{id: "projects-cvae-for-sampling-based-motion-planning",
+          title: 'CVAE for sampling-based motion planning',
+          description: "course project for CSE535 at Rutgers.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/3_project/";
-            },},{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/4_project/";
-            },},{id: "projects-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/5_project/";
-            },},{id: "projects-project-6",
-          title: 'project 6',
-          description: "a project with no image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/6_project/";
-            },},{id: "projects-project-7",
-          title: 'project 7',
-          description: "with background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/7_project/";
-            },},{id: "projects-project-8",
-          title: 'project 8',
-          description: "an other project with a background image and giscus comments",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/8_project/";
-            },},{id: "projects-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project/";
+              window.location.href = "/projects/rutgers-cse535/";
             },},{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%79%6F%75@%65%78%61%6D%70%6C%65.%63%6F%6D", "_blank");
+          window.open("mailto:%79%69%6E%67%6C%6F%6E%67%6D%69%61%6F%33@%67%6D%61%69%6C.%63%6F%6D", "_blank");
         },
       },{
-        id: 'social-inspire',
-        title: 'Inspire HEP',
+        id: 'social-github',
+        title: 'GitHub',
         section: 'Socials',
         handler: () => {
-          window.open("https://inspirehep.net/authors/1010907", "_blank");
+          window.open("https://github.com/MiaoDragon", "_blank");
         },
       },{
-        id: 'social-rss',
-        title: 'RSS Feed',
+        id: 'social-leetcode',
+        title: 'LeetCode',
         section: 'Socials',
         handler: () => {
-          window.open("/feed.xml", "_blank");
+          window.open("https://leetcode.com/u/daodao541/", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/yinglong-miao", "_blank");
         },
       },{
         id: 'social-scholar',
         title: 'Google Scholar',
         section: 'Socials',
         handler: () => {
-          window.open("https://scholar.google.com/citations?user=qc6CJjYAAAAJ", "_blank");
-        },
-      },{
-        id: 'social-custom_social',
-        title: 'Custom_social',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://www.alberteinstein.com/", "_blank");
+          window.open("https://scholar.google.com/citations?user=KUAIepUAAAAJ", "_blank");
         },
       },{
       id: 'light-theme',

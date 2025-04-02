@@ -31,7 +31,7 @@
         "summary": "Developed a task and motion planning framework using ROS in Python for automatic and precise handling of COVID-19 testing strips using a UR5 robot with RGB-D images in flexible workspace.",
         "highlights": ["robotic manipulation", "task and motion planning", 
                        "recognized by the <a href=\"https://arminstitute.org/news/covid-19-focused-projects/#:~:text=Rapid%20Robotic%20Diagnostic%20Kit%20Discovery%20(R2D2)\">ARM Institute</a>", 
-                       "use of Python, C++, ROS, MoveIt"]
+                       "use of Python, ROS, MoveIt"]
     },
     {
         "name": "ARCLab at University of California, San Diego",

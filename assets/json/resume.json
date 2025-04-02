@@ -270,20 +270,35 @@
   ],
   "projects": [
     {
+      "name": "Trash Collection Robot",
+      "summary": "Course project at Rutgers University. Programmed a LoCoBot WX250 robot for trash collection. Set up navigation stack and ROS2 communication. Controlled the robot movement through a PID-like controller. Engineered motion planning for grasping objects given perception from YOLOv5s.",
+      "highlights": ["ROS navigation stack", "ROS2", "control", "motion planning"],
+      "startDate": "2022-09",
+      "endDate": "2022-12"
+    },
+    {
       "name": "Conditional Variational Autoencoder for Sampling-based Motion Planning",
-      "summary": "Course project at Rutgers University. Applied Conditional Variational Autoencoder for sampling-based motion planning, enabling learning of conditional distribution by user inputs..",
+      "summary": "Course project at Rutgers University. Applied Conditional Variational Autoencoder for sampling-based motion planning, enabling learning of conditional distribution by user inputs.",
       "highlights": ["Variational Autoencoder", "sampling-based motion planning", "PyTorch"],
       "startDate": "2020-09",
       "endDate": "2020-12",
       "url": "https://docs.google.com/presentation/d/1KrbCkf4gk5zq3CG9zu4kwyF2JAhf7_tpGOzzHLXg0NQ/edit?usp=drive_link"
     },
     {
+      "name": "Deep Learning for 3D Collision Checking",
+      "summary": "Course project at UCSD. Generated dataset from online 3D scanned point cloud data and applied Siamese Network with PointNet for learning-based collision checking for 3D point cloud. Achieved more than 90% accuracy on complex point cloud objects.",
+      "highlights": ["PointNet", "Siamese Network", "PyTorch"],
+      "startDate": "2019-01",
+      "endDate": "2019-03",
+      "url": "https://github.com/MiaoDragon/CDPCNet"
+    },
+    {
       "name": "Affordable Smart Wheelchair",
       "summary": "Student club at University of California, San Diego. Led the setup through ROS for the first semester. Configured ROS Navigation Stack for the second semester and experimented with ORB SLAM2.",
-      "highlights": ["Variational Autoencoder", "sampling-based motion planning", "PyTorch"],
+      "highlights": ["ROS", "ROS Navigation Stack", "ORB SLAM2"],
       "startDate": "2018-10",
       "endDate": "2019-03",
       "url": "https://smartwheelchair.ucsd.edu/"
-    }
+    },
   ]
 }

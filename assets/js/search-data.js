@@ -74,6 +74,11 @@ ninja.data = [{
           description: "Investigate and reproduce paper results for IK with collision avoidance using control barrier function.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/CBF-ik/";
+            },},{id: "projects-google-gen-ai-course-project-medical-assistant-v1",
+          title: 'Google Gen AI Course Project - Medical Assistant v1',
+          description: "Designed and Implemented a Medical Assistant that can provide medical Q&amp;As and doctor search.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/google-5-day-genAI/";
             },},{id: "projects-ocrtoc-challenge-2020",
           title: 'OCRTOC challenge 2020',
           description: "Participated in IROS 2020 OCRTOC challenge.",

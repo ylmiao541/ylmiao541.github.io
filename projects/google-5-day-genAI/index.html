@@ -1,0 +1,134 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Google Gen AI Course Project - Medical Assistant v1 | Yinglong Miao </title> <meta name="author" content="Yinglong Miao"> <meta name="description" content="Designed and Implemented a Medical Assistant that can provide medical Q&amp;As and doctor search."> <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website"> <link rel="stylesheet" href="/assets/css/bootstrap.min.css?a4b3f509e79c54a512b890d73235ef04"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="/assets/css/academicons.min.css?f0b7046b84e425c55f3463ac249818f5"> <link defer rel="stylesheet" href="/assets/css/scholar-icons.css?62b2ac103a88034e6882a5be5f3e2772"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?d41d8cd98f00b204e9800998ecf8427e"> <link rel="canonical" href="https://ylmiao541.github.io/projects/google-5-day-genAI/"> <script src="/assets/js/theme.js?9a0c749ec5240d9cda97bc72359a72c0"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> Yinglong Miao </a> <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse text-right" id="navbarNav"> <ul class="navbar-nav ml-auto flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item active"> <a class="nav-link" href="/projects/">projects <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">cv </a> </li> <li class="nav-item "> <a class="nav-link" href="/teaching/">teaching </a> </li> <li class="nav-item dropdown "> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">submenus </a> <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"> <a class="dropdown-item " href="/publications/">publications</a> <div class="dropdown-divider"></div> <a class="dropdown-item " href="/projects/">projects</a> </div> </li> <li class="nav-item"> <button id="search-toggle" title="Search" onclick="openSearchModal()"> <span class="nav-link">ctrl k <i class="ti ti-search"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" title="Change theme"> <i class="ti ti-sun-moon" id="light-toggle-system"></i> <i class="ti ti-moon-filled" id="light-toggle-dark"></i> <i class="ti ti-sun-filled" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Google Gen AI Course Project - Medical Assistant v1</h1> <p class="post-description">Designed and Implemented a Medical Assistant that can provide medical Q&amp;As and doctor search.</p> </header> <article> <h1 id="project-description">Project Description</h1> <p>In this project, a Medical Assistant chatbot is implemented that can answer general medical Q&amp;As and search for doctors based on the user queries. This enables smooth communication with the user, while allowing accessing domain knowledge of the medical field through RAG system with vector database storing medical documents.</p> <p>This project utilizes the GenAI agent method provided by Gemini API to allow grounding the information by Google Search, and accessing online doctor database for making medical appointment.</p> <p>The project can be found at: <a href="medical-assistant-v1">https://www.kaggle.com/code/yinglongmiao/medical-assistant-v1</a>. To try it out, go to the “<strong>Running Example</strong>” section and interacts with the chatbot through an input dialog!</p> <h1 id="implementation">Implementation</h1> <p>The flowchart of the system can be described as follows.</p> <div class="row justify-content-center"> <div class="col-11 mt-3 mt-md-0"> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/project-genai-med-assist/genai-medical-assist-flowchart-480.webp 480w,/assets/img/project-genai-med-assist/genai-medical-assist-flowchart-800.webp 800w,/assets/img/project-genai-med-assist/genai-medical-assist-flowchart-1400.webp 1400w," type="image/webp" sizes="95vw"></source> <img src="/assets/img/project-genai-med-assist/genai-medical-assist-flowchart.png" class="img-fluid rounded z-depth-1" width="100%" height="auto" title="flowchart" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"> </picture> </figure> </div> </div> <div class="caption"> This figure illustrates the flowchart of the system. </div> <h2 id="chatbot">ChatBot</h2> <p>the ChatBot provides communication with the user through a chat session by Gemini API. The chatbot uses tools implemented by the domain expert and the appointment maker, as shown below:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>self.tools = self.domain_expert.tools + self.appointment_maker.tools + [self.closing_app]
+</code></pre></div></div> <p>It includes an additional function <code class="language-plaintext highlighter-rouge">self.closing_app</code> which sets the status of the chatbot in case the user wants to terminate the session. This is controlled by a status variable <code class="language-plaintext highlighter-rouge">self.TERMINATE</code>.</p> <p>The chat session is initialized using “gemini-2.0-flash” model in the constructor of the class.</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>self.chat_session = self.client.chats.create(
+    model="gemini-2.0-flash",
+    config=types.GenerateContentConfig(
+        system_instruction=self.system_instr,
+        tools=self.tools,
+    ),
+)
+</code></pre></div></div> <p>THe main function <code class="language-plaintext highlighter-rouge">chat()</code> implements the main flow of communication with the user.</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def chat(self):
+    # * perform the basic I/O operation: getting inputs from the user, and perform actions accordingly
+    self.TERMINATE = False
+    while True:
+        user_input = input("User: ")
+        # If it looks like the user is trying to quit, flag the conversation
+        # as over.
+        # ref: https://www.kaggle.com/code/markishere/day-3-building-an-agent-with-langgraph
+        if user_input in {"q", "quit", "exit", "goodbye"}:
+            break
+
+        response = self.chat_session.send_message(user_input)
+        print(f"\n{response.text}")
+        if self.TERMINATE:
+            break
+</code></pre></div></div> <p>The user can input “q” and other ways to exit the chat session. At the same time, if the user input indicates he/she wants to quit the session, it is captured by the <code class="language-plaintext highlighter-rouge">closing_app()</code> function.</p> <h2 id="domain-expert">Domain Expert</h2> <p>The DomainExpert implements the functionalities to support accessing domain knowledge of the medical field through RAG (vector database) and Google Search.</p> <p>It uses a ChromaDB to construct a vector database for RAG operation of extracting medical knowledge database. Cosine distance is used to facilitate similarity search at high dimensions.</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>embed_fn = self.GeminiEmbeddingFunction()
+embed_fn.document_mode = True
+chroma_client = chromadb.Client()
+db = chroma_client.get_or_create_collection(name=DB_NAME, embedding_function=embed_fn, metadata={"hnsw:space": "cosine"})  # or "dotproduct")
+</code></pre></div></div> <p>The vector database uses the embedding function provided by the Gemini API, as shown below.</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>response = self.client.models.embed_content(
+    model="models/text-embedding-004",
+    contents=input,
+    config=types.EmbedContentConfig(
+        task_type=embedding_task,
+    ),
+)
+</code></pre></div></div> <p>When the tool <code class="language-plaintext highlighter-rouge">search_knowledge(request)</code> is executed, it first sees if information can be found in the database with high similarity (filtered by <code class="language-plaintext highlighter-rouge">distance_threshold</code>):</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def search_database(self, request: str, distance_threshold: float = 0.8) -&gt; list[str]:
+    self.embed_fn.document_mode = False  # retrieval
+    result = self.db.query(query_texts=[request], n_results=1)
+    documents = result['documents'][0]
+    # * based on the similarity, determine if to search online or not.
+    documents = [documents[i] for i in range(len(documents)) if result['distances'][0][i] &lt;= distance_threshold]
+    return documents
+</code></pre></div></div> <p>If no related information can be found (determined by the similarity), then the agent applies Google search. This is implemented by calling a GenAI call using Google search as grounding:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>response = self.genai_client.models.generate_content(
+    model="gemini-2.0-flash",
+    contents=f"Please make a Google search for the user query: {request}",
+    config=types.GenerateContentConfig(
+        tools=[self.google_search_tool],
+        response_modalities=["TEXT"],
+    )
+)
+</code></pre></div></div> <p>This is used as this has higher rate limit than calling Google Search function directly, and it enables smarter searches implemented by the API.</p> <p>The hope is that I can add the information extracted from the website (stored in the <code class="language-plaintext highlighter-rouge">response.candidates[0].grounding_metadata.grounding_chunks</code> field) to the vector database. But due to time constraint, this is left for future work.</p> <p>The agent then returns a response based on the documents, or Google search directly, to the ChatBot agent. Extracted documents from the database is added as response as well.</p> <h2 id="appointmentmaker">AppointmentMaker</h2> <p>The AppointmentMaker is responsible for searching for doctors and (future work) making appointments if needed. This is achieved by accessing information from the online database <a href="https://data.cms.gov/provider-data/dataset/mj5m-pzi6#api" rel="external nofollow noopener" target="_blank">CMS National Downloadable File</a>. Although the idea is easy, the implementation is a bit tricky due to several challenges:</p> <ol> <li>the API for accessing the online database is complex, and I’m not familiar with it. Hence an idea came out: what about using the GenAI to call the API directly? However, this leads to the next challenges.</li> <li>It is found out that Gemini API code execution does not allow Internet connection for security reasons. Hence I can only work locally. There are two ways to solve it: firstly I can download the dataset from online. But it is found that the dataset is too large and takes to much time to download. Another solution is writing functions to access the online API, while using the Gemini API to generate GET or POST requests. The code for calling remote API endpoint is shown below: <div class="language-plaintext highlighter-rouge"> <div class="highlight"><pre class="highlight"><code>def search_cms_database_json(query: dict) -&gt; dict:
+ """
+ given query formated in JSON, query the online CMS dataset.
+
+ Args:
+     query: JSON format dictionary formatting the query according to the CMS dataset API.
+
+ Returns:
+     retrieved data from online CMS dataset in JSON format if success. Return None if query failed.
+ """
+
+ query_url = f'https://data.cms.gov/provider-data/api/1/datastore/query/{distribution_id}'
+ headers = {'Content-Type': 'application/json'}
+ response = requests.post(query_url, json=query, headers=headers)
+
+ data = None
+ if response.status_code == 200:
+     print('Query succeed.')
+     data = response.json()
+ else:
+     print(f"Query failed: {response.status_code}")
+ return data
+</code></pre></div> </div> <p>After the distribution id is found, this can call the remote API for database queries.</p> </li> <li>When using the latter option, I need to know the syntax of the GET or POST requests. Luckily the API provides online specification of the API at <a href="https://data.cms.gov/provider-data/api/1/metastore/schemas/dataset/items/mj5m-pzi6/docs" rel="external nofollow noopener" target="_blank">API Specification</a> (if you’re interested, feel free to check it out.). However, the specification string is too long, and naively I met the issue of hitting the <strong>token length limit</strong>.</li> </ol> <p>The last step is closer to the solution. To make sure we can use Gemini API function call to access the database while referring to the online specification, one solution is to use the Gemini client to summarize the <strong>related API signatures</strong>, and then use this to guide the further API calls. To accelerate the search process and improve user experience, we can accelerate the user query search by preprocessing, such as understanding the available data fields in the database. This requires a <strong>preprocessing</strong> step that interacts with the database first to extract useful information that can help acceleration future queries. Hence the solution includes two important components: <strong>API understanding</strong>, and <strong>preprocessing</strong>.</p> <p>The API understanding code snippet can be found below:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> def understand_API(self):
+     """
+     given the api spec, extract useful information for specific API endpoint.
+     """
+     prompt = f"""extract relavent information for querying the database using POST via '/provider-data/api/1/datastore/query/distributionID' endpoint from the API specification, where distributionID is already provided as {self.distribution_id}.
+     Provide specification of query input.
+     Provide one example of full query input for future aid.
+     API SPECIFICATOIN: \n{self.api_spec}"""
+
+     print("parsing online database API...")
+     response = genai_client.models.generate_content(
+       model='gemini-2.0-flash',
+       contents=prompt,
+       # config=types.GenerateContentConfig()
+     )
+     return response.text
+</code></pre></div></div> <p>This returns the API specification that we are interested in using. The preprocessing step can be found below:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> def preprocess(self):
+     """
+     preprocess the database. Obtain useful information such as the distribution_id, and the fields available for future use.
+     """
+     prompt = f"""You are going to use the database at CMS to search for doctors of specific specialties and for making appointment. 
+     You need to do the following to preprocess information that can be used for future usage.
+     - understand the database schema and its available data fields.
+     given the API specification, use the defined function tool 'search_cms_database_json' with query argument to extract useful information that could be used for future reference.
+     This function tool is using '/provider-data/api/1/datastore/query/distributionID' endpoint from the API specification, where distributionID is already provided as {self.distribution_id}.
+     You just need to specify the JSON query as input to the function.
+     provide the database information in a structured way.
+     API SPECIFICATION: \n{self.api_info}
+     Note:
+     - set "limit" field as otherwise it may extract all the data in the database.
+     """
+     print("preprocessing online database...")
+     response = self.genai_call(prompt)
+     return response
+</code></pre></div></div> <p>After naive implementation, I met the issue that the syntax during API calling is roughly correct but could sometimes lead to errors due to minor syntax issues. To mitigate the issue, I found that prompt engineering with one-shot or few-shot learning helps greatly, by asking the Gemini agent to provide one example during API understanding. After this, the agent can successfully call online API calls.</p> <p>Afterward, the agent works, but struggles to find doctors that are of certain specialties (such as words described by “heart” or “kidney”, which are not available in the database.) To mitigate the problem, prompt engineering helps again, by instructing the database to first check out the keywords provided in the database for specialties. The complication is that the API does not provide calls for getting unique database items. However, I found that after implementing the prompt engineering, the agent is able to successfully solve most search queries.</p> <p>Below shows the latest version of the <code class="language-plaintext highlighter-rouge">search_doctors(query)</code> function, notice how I added some “NOTE” to instruct the agent to first list out the values that are in the database. This greatly improves the robustness of the system.</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  
+ def search_doctors(self, query: str):
+     """
+     search from CMS dataset: https://data.cms.gov/provider-data/dataset/mj5m-pzi6#api
+     given the user query (symptom, etc), search for doctors for the treatment.
+     Achieve this by Python code generation and calling, given the API description found at: https://data.cms.gov/provider-data/api/1/metastore/schemas/dataset/items/mj5m-pzi6/docs
+     """
+     prompt = f"""The user wants to search for doctors given the query. 
+     You are going to use information of the API specification to extract information of the doctor.
+     Use the defined function tool 'search_cms_database_json' with JSON query argument to make queries.
+     API SPECIFICATION: \n{api_info}\n
+     prior knowledge of the database: \n{preprocessed_info}\n
+     user query: \n{query}
+     NOTE:
+     - you may want to first list out set of values that are included in the database before searching for keyword. Make sure the keyword exists in the database. Setting "limit" to be 0 won't work in the API.
+     - if the keyword does not exist in the database, try searching what unique keywords are included in the database to find similar ones. You can do this at the beginning to aid later steps.
+     - Make sure to include the contact information of the doctors (their location, phone number, etc) in the response.
+     - Prioritize shorter queries first.
+     Return the searched information at the end.
+     Response:
+     """
+     
+     response = self.genai_call(prompt)
+     return response
+</code></pre></div></div> <h2 id="future-work">Future Work</h2> <p>Due to time constraints, I am not able to implement all the components that were originally planned. This includes:</p> <ol> <li>adding website references to the vector database (Note: copywrite issue might occur)</li> <li>adding evaluation mechanism to qualitatively and quantitatively evaluates the agent system.</li> </ol> <p>I found the second step essential, as although the agent seems to perform smoothly, there is much stochasticity in its output, which is hard to define and evaluate quantitatively. It is important to obtain metrics for evaluating the performance of the system, such as the success rate, and how much the system is “<strong>professional</strong>” enough to provide medical assistant. It is important to analyze how much the agent is truthful and can provide professional medical feedbacks, which is an essential part of building medical assistant.</p> <h2 id="reference">Reference</h2> <ul> <li>https://www.kaggle.com/code/markishere/day-2-document-q-a-with-rag</li> <li>https://www.kaggle.com/code/markishere/day-2-embeddings-and-similarity-scores</li> <li>https://www.kaggle.com/code/markishere/day-3-function-calling-with-the-gemini-api</li> </ul> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2025 Yinglong Miao. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>. </div> </footer> <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> <script src="/assets/js/bootstrap.bundle.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?a0db7e5d5c70cc3252b3138b0c91dcaf" type="text/javascript"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/js/zoom.js?85ddb88934d28b74e78031fd54cf8308"></script> <script src="/assets/js/no_defer.js?2781658a0a2b13ed609542042a859126"></script> <script defer src="/assets/js/common.js?e0514a05c5c95ac1a93a8dfd5249b92e"></script> <script defer src="/assets/js/copy_code.js?12775fdf7f95e901d7119054556e495f" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?d9f17b6adc2311cbabd747f4538bb15f"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/js/mathjax-setup.js?a5bb4e6a542c546dd929b24b8b236dfd"></script> <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script> <script defer src="/assets/js/progress-bar.js?2f30e0e6801ea8f5036fa66e1ab0a71a" type="text/javascript"></script> <script src="/assets/js/vanilla-back-to-top.min.js?f40d453793ff4f64e238e420181a1d17"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/js/search/ninja-keys.min.js?a3446f084dcaecc5f75aa1757d087dcf"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/js/search-setup.js?6c304f7b1992d4b60f7a07956e52f04a"></script> <script src="/assets/js/search-data.js"></script> <script src="/assets/js/shortcut-key.js?6f508d74becd347268a7f822bca7309d"></script> <script src="/assets/js/toc-fix.js"></script> </body> </html>

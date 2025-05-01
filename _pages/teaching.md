@@ -12,6 +12,8 @@ nav_order: 6
 Organize your courses by years, topics, or universities, however you like! -->
 
 **Rutgers University**:
+- CS344 Design and Analysis of Computer Algorithms (Spring 2025)
+- CS205 Introduction to Discrete Structures I (Fall 2024)
 - CS439 Intro to Data Science (Fall 2020, Spring 2022)
 - CS 440 Intro to AI (Spring 2021)
 - CS46/560 Intro to Computational Robotics (Fall 2022)

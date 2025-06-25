@@ -5,7 +5,7 @@ permalink: /
 subtitle: <a href="mailto:yinglongmiao3@gmail.com" title="email" style="font-size:20px;color:inherit"><i class="fa-solid fa-envelope"></i></a> <a href="https://github.com/MiaoDragon" title="GitHub" style="font-size:20px;color:inherit"><i class="fa-brands fa-github"></i></a> <a href="https://www.linkedin.com/in/yinglong-miao" title="LinkedIn" style="font-size:20px;color:inherit"><i class="fa-brands fa-linkedin"></i></a> <a href="https://scholar.google.com/citations?user=KUAIepUAAAAJ" title="Google Scholar" style="font-size:20px;color:inherit"><i class="ai ai-google-scholar"></i></a>
 profile:
   align: right
-  image: prof_pic.jpg
+  image: prof_pic_new.jpg
   image_circular: true # crops the image to make it circular
   more_info:
 selected_papers: true # includes a list of papers marked as "selected={true}"
